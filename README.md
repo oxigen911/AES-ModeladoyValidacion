@@ -8,7 +8,7 @@ Nombres: Carlos Rodríguez
 ```
 
 # Taller de modelado y validación de arquitectura
-##1.	Patrón nuclear de la implementación: Microservicios
+## 1.	Patrón nuclear de la implementación: Microservicios
 Como patrón nuclear de la arquitectura elegimos microservicios. Este nos permitirá un desacoplamiento de los sistemas que interactúan reduciendo la complejidad e incrementando la portabilidad y la escalabilidad del sistema. Esto es muy importante para nuestro diseño ya que nuestra idea requiere exponer una serie de servicios REST para la gestión de los convenio de pago que este disponga dentro de nuestra plataforma.
  
 Dentro de las ventajas por las cuales lo seleccionamos como patrón nuclear están:
@@ -19,7 +19,7 @@ Dentro de las ventajas por las cuales lo seleccionamos como patrón nuclear est�
 •	rápidamente
 De la misma forma sabemos que encontramos desventajas en este enfoque como lo es la gestión de estos servicios y la complejidad que lleva realizar pruebas end to end.
 
-##2.	Otros patrones implementados en la solución
+## 2.	Otros patrones implementados en la solución
 
 •	Cliente – servidor: La arquitectura cliente-servidor es un patrón de arquitectura de software en el que las tareas se reparten entre los proveedores de recursos o servicios (servidores), y los que solicitan estos servicios o recursos (clientes). 
  
@@ -30,7 +30,7 @@ De la misma forma sabemos que encontramos desventajas en este enfoque como lo es
  
 •	Registry service: Servicio para la ejecución de los pagos de acuerdo con el número de factura y el convenio al que pertenece la misma.
 
-###TradeOffs
+### TradeOffs
 
 Al tener una arquitectura orientada a microservicios, garantizamos el desacoplamiento de la capa lógica, lo cual nos garantiza Escalabilidad en cuanto a la evolución de funcionalidades. Esto beneficia otros atributos de calidad sobre el tiempo, como la eficiencia, disponibilidad y rendimiento.
 
@@ -38,11 +38,11 @@ Si bien desagregar la capa lógica permite la reutilización de componentes y fu
 
 La arquitectura orientada a microservicios implementa la federación, lo que nos asegura que cada uno de sus componentes hace parte de un todo y a su vez se regula a sí mismo.  Esto por otro lado agrega cierto grado de complejidad al momento de realizar nuevas funcionalidades y/o despliegues, pues todo los interesados o responsables de los servicios deben mantenerse en contacto para evitar desfases en cuanto a la integración de dichos componentes.
 
-##3.	Diagrama de componentes : Revisar documento adjunto
+## 3.	Diagrama de componentes : Revisar documento adjunto
 
 ![DiagramaComponentes](https://raw.githubusercontent.com/oxigen911/AES-ModeladoyValidacion/master/media/arq1.jpg)
  
-##4.	Herramientas utilizadas
+## 4.	Herramientas utilizadas
 
 •	Lenguaje de programación: Java
 •	Servidor de aplicaciones: Apache Tomcat.
