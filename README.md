@@ -28,6 +28,8 @@ De la misma forma sabemos que encontramos desventajas en este enfoque como lo es
 •	Registry service: Servicio para la ejecución de los pagos de acuerdo con el número de factura y el convenio al que pertenece la misma.
 
 3.	Diagrama de componentes : Revisar documento adjunto
+
+![DiagramaComponentes](https://raw.githubusercontent.com/oxigen911/AES-ModeladoyValidacion/master/media/arq1.jpg)
  
 4.	Herramientas utilizadas
 
