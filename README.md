@@ -50,7 +50,7 @@ Si bien desagregar la capa lógica permite la reutilización de componentes y fu
 
 La arquitectura orientada a microservicios implementa la federación, lo que nos asegura que cada uno de sus componentes hace parte de un todo y a su vez se regula a sí mismo.  Esto por otro lado agrega cierto grado de complejidad al momento de realizar nuevas funcionalidades y/o despliegues, pues todo los interesados o responsables de los servicios deben mantenerse en contacto para evitar desfases en cuanto a la integración de dichos componentes.
 
-## 3.	Diagrama de componentes : Revisar documento adjunto
+## 3.	Diagrama de componentes
 
 ![DiagramaComponentes](https://raw.githubusercontent.com/oxigen911/AES-ModeladoyValidacion/master/media/arq1.jpg)
  
