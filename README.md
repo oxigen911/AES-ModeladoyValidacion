@@ -135,3 +135,9 @@ types:
       application/json:
         type: Pago
 ```
+
+## Más acerca de RAML
+
+* [Tutorial](http://raml.org/developers/raml-100-tutorial)
+* [Tutorial Avanzado](http://raml.org/developers/raml-200-tutorial)
+* [Ejemplos](https://github.com/raml-org/raml-examples)
