@@ -62,3 +62,76 @@ La arquitectura orientada a microservicios implementa la federación, lo que nos
 * Base de datos: MySQL 8.
 * Entorno de Desarrollo: Eclipse STS
 * Herramienta para pruebas de servicios: SOAP UI
+
+```yaml
+#%RAML 1.0
+title: PagoFacturas
+version: 1.0
+baseUri: api/resources
+types:
+  RESTData:
+    properties:
+      metodo: string
+      funcion: string
+      recurso: string
+      pathParamMapping: string
+      paramsMapping: string
+      headers: string
+      payloadMapping: string
+  SOAPData:
+    properties:
+      soapAction: string
+      xsltDefinition: string
+      funcion: string
+      responseElement: string
+  Convenio:
+    properties:
+      id: number
+      idConvenio: number
+      nombre: string
+      tipoServicio: string
+      host: string
+      puerto: number
+      urlServicio: string
+      tipo: string
+      soapData: SOAPData[]
+      restData: RESTData[]
+  Pago:
+    properties:
+      numeroFactura: number
+      numeroConvenio: number
+      numeroIdCliente: string
+      tipoIdCliente: string
+      totalPago: number
+
+/api/v1/convenio:
+  post:
+    description: Permite crear un convenio a partir del objeto dado
+    body:
+      application/json:
+        type: Convenio
+  /{id}:
+    delete:
+      description: Permite borrar un convenio registrado
+      responses:
+        200:
+          description: Borra un convenio
+    patch:
+      description: Permite modificar la información almacenada de un convenio
+      body:
+        application/json:
+          type: Convenio
+    get:
+      description: Permite devolver el convenio asociado a un número de convenio dado
+      responses:
+        200:
+          body:
+            application/json:
+              type: Convenio
+/pago:
+  post:
+    description: Permite efectuar un pago
+    body:
+      application/json:
+        type: Pago
+```
