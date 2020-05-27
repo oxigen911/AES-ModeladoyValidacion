@@ -1,10 +1,11 @@
 # AES-ModeladoyValidacion
 
 ```
-**Nombres:** Carlos Rodríguez
-	 Alberto Zapata
-	 Reynaldo Blanco
-	 Juan Villanueva
+Integrantes: 
+	Carlos Rodríguez
+	Alberto Zapata
+	Reynaldo Blanco
+	Juan Villanueva
 ```
 
 # Taller de modelado y validación de arquitectura
