@@ -16,28 +16,30 @@ Como patrón nuclear de la arquitectura elegimos microservicios. Este nos permit
  
 Dentro de las ventajas por las cuales lo seleccionamos como patrón nuclear están:
 
-•	Escalabilidad
-•	Funcionalidad modular, módulos independientes.
-•	Libertad del desarrollador de desarrollar y desplegar servicios de forma independiente
-•	Uso de contenedores permitiendo el despliegue y el desarrollo de la aplicación
-•	rápidamente
+* Escalabilidad
+* Funcionalidad modular, módulos independientes.
+* Libertad del desarrollador de desarrollar y desplegar servicios de forma independiente
+* Uso de contenedores permitiendo el despliegue y el desarrollo de la aplicación rápidamente
 
 De la misma forma sabemos que encontramos desventajas en este enfoque como lo es la gestión de estos servicios y la complejidad que lleva realizar pruebas end to end.
 
 ## 2.	Otros patrones implementados en la solución
 
-•	**Cliente – servidor:** La arquitectura cliente-servidor es un patrón de arquitectura de software en el que las tareas se reparten entre los proveedores de recursos o servicios (servidores), y los que solicitan estos servicios o recursos (clientes). 
+*	**Cliente – servidor:** La arquitectura cliente-servidor es un patrón de arquitectura de software en el que las tareas se reparten entre los proveedores de recursos o servicios (servidores), y los que solicitan estos servicios o recursos (clientes). 
 
 ![PatronClienteServidor](https://raw.githubusercontent.com/oxigen911/AES-ModeladoyValidacion/master/media/patron_c_s.png)
 
-•	**Orquestación de servicios:** Se realiza una orquestación de servicios (composición de servicios) en el cual un servicio es el encargado de realizar de la interacción entre los diferentes servicios creados para cumplir con la funcionalidad.
-•	**MVC:** Patrón de arquitectura de software que utilizando 3 componentes separados (Vista, Modelo y Controlador) separa la lógica de la aplicación de la lógica de la vista en una aplicación donde el controlador permite la comunicación entre la vista y el modelo y comunica entre ellos los cambios de estado de cada uno.
-•	**Dispatcher:** Un dispatcher es el responsable de la ejecución de los servicios, controlando su ejecución de acuerdo con los parámetros enviados por el routing controller. Un dispatcher se puede encapsular dentro de un controlador (en este caso lo hemos implementado así) o puede ser un componente independiente que trabaja en coordinación con el controlador.
-•	**Intermediate routing:** Es un patrón que se usa para el enrutamiento de la petición al servicio correcto de acuerdo con los parámetros que se le ingresan.
+*	**Orquestación de servicios:** Se realiza una orquestación de servicios (composición de servicios) en el cual un servicio es el encargado de realizar de la interacción entre los diferentes servicios creados para cumplir con la funcionalidad.
+
+*	**MVC:** Patrón de arquitectura de software que utilizando 3 componentes separados (Vista, Modelo y Controlador) separa la lógica de la aplicación de la lógica de la vista en una aplicación donde el controlador permite la comunicación entre la vista y el modelo y comunica entre ellos los cambios de estado de cada uno.
+
+*	**Dispatcher:** Un dispatcher es el responsable de la ejecución de los servicios, controlando su ejecución de acuerdo con los parámetros enviados por el routing controller. Un dispatcher se puede encapsular dentro de un controlador (en este caso lo hemos implementado así) o puede ser un componente independiente que trabaja en coordinación con el controlador.
+
+*	**Intermediate routing:** Es un patrón que se usa para el enrutamiento de la petición al servicio correcto de acuerdo con los parámetros que se le ingresan.
  
 ![PatronIR](https://raw.githubusercontent.com/oxigen911/AES-ModeladoyValidacion/master/media/intermediate_routing.png)
 
-•	**Registry service:** Servicio para la ejecución de los pagos de acuerdo con el número de factura y el convenio al que pertenece la misma.
+*	**Registry service:** Servicio para la ejecución de los pagos de acuerdo con el número de factura y el convenio al que pertenece la misma.
 
 ### TradeOffs
 
@@ -53,9 +55,9 @@ La arquitectura orientada a microservicios implementa la federación, lo que nos
  
 ## 4.	Herramientas utilizadas
 
-•	Lenguaje de programación: Java
-•	Servidor de aplicaciones: Apache Tomcat.
-•	Frameworks: Spring boot, JAX-RS, Jersey.
-•	Base de datos: MySQL 8.
-•	Entorno de Desarrollo: Eclipse STS
-•	Herramienta para pruebas de servicios: SOAP UI
+* Lenguaje de programación: Java
+* Servidor de aplicaciones: Apache Tomcat.
+* Frameworks: Spring boot, JAX-RS, Jersey.
+* Base de datos: MySQL 8.
+* Entorno de Desarrollo: Eclipse STS
+* Herramienta para pruebas de servicios: SOAP UI
