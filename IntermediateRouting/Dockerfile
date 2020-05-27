@@ -1,6 +1,6 @@
 FROM gersua/openjdk8-ubuntu:latest
 MAINTAINER jsvillanueva - jsvillanueva@javeriana.edu.co
-ENV JAR_NAME routerservice.jar
+ENV JAR_NAME IntermediateRouting.jar
 ENV WORKSPACE /opt
 WORKDIR ${WORKSPACE}
 COPY target/${JAR_NAME} .
