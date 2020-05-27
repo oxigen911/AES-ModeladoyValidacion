@@ -63,6 +63,8 @@ La arquitectura orientada a microservicios implementa la federación, lo que nos
 * Entorno de Desarrollo: Eclipse STS
 * Herramienta para pruebas de servicios: SOAP UI
 
+## 5.	Contratos
+
 ```yaml
 #%RAML 1.0
 title: PagoFacturas
